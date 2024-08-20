@@ -115,4 +115,38 @@
   .feedback__clients p{
     @apply my-5;
   }
+  .menuList__cards {
+    @apply flex flex-col gap-4 justify-center items-center text-center py-10 lg:border lg:border-white rounded-3xl;
+  }
+  .menuList__cards--text ul {
+    @apply mb-5 flex text-secondary justify-center;
+  }
+  .menuList__cards--text h4 {
+    @apply font-semibold;
+  }
+  .menuList__cards img {
+    @apply w-32;
+  }
+  .menuList__tabs h4{
+    @apply hover:text-primary cursor-pointer;
+  }
+  .menuList__details {
+    @apply hidden lg:max-w-[40rem] lg:mx-auto;
+  }
+  .menuList__details.active{
+    @apply block;
+  }
+  .menuList__tabs h4.active{
+    @apply text-primary;
+  }
+  .contactForm__form input{
+    @apply w-[27rem] lg:w-[40rem] bg-white p-3 my-2 rounded-lg focus:outline-none;
+  }
+  .contactForms__wrapper form textarea{
+    @apply w-[27rem] lg:w-[40rem] h-[15rem] bg-white p-3 rounded-lg my-3 focus:outline-none;
+  }
+  .contactForm__name input{
+    @apply w-[13rem] lg:w-[19.5rem]
+
+  }
 }

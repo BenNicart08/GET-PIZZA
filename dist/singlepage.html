@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
   </head>
   <body>
     <!-- HEADER -->
@@ -33,7 +37,6 @@
         </div>
       </div>
     </header>
-
     <!-- ANNOUNCEMENT -->
     <section
       class="announce fixed w-full z-40 bg-white pt-28 pb-1 text-center font-semibold text-primary leading-3"
@@ -48,46 +51,66 @@
         </div>
       </div>
     </section>
-    <!-- MAPS -->
-    <section class="maps pt-40">
-      <div class="container">
-        <div class="maps__wrapper">
-          <iframe
-            class="w-[27rem] mx-auto lg:w-[70rem] lg:h-[40rem]"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.372058564885!2d121.3454663758684!3d14.055193590195447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5cd2d6006569%3A0x9075b8a72b9d5fb0!2sFrontline%20Business%20Solutions%2C%20Inc.!5e0!3m2!1sen!2sph!4v1724118864805!5m2!1sen!2sph"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+
+    <!-- SINGLE PAGE CONTENT -->
+     <section class="singlePage pt-40">
+        <div class="container">
+            <div class="singlePage__wrapper">
+                <img class="h-[30rem] object-cover rounded-2xl mb-5 lg:mx-auto" src="../IMG/Prosciutto-singlepage.jpeg" alt="">
+                <div class="singlePage__content max-w-[25rem] mx-auto my-10 bg-secondary/30 pl-10 py-5 lg:flex lg:max-w-[40rem] lg:gap-10 lg:px-10">
+                    <div class="singlePage__details1 mb-20">
+                        <h3 class="font-bold pb-5">Serving</h3>
+                        <ul class="list-disc flex flex-col gap-5">
+                            <li>Prep: 15 mins</li>
+                            <li>Cook: 10 mins</li>
+                            <li>Total: 25 mins</li>
+                            <li>Servings: 2 servings</li>
+                            <li>Yield: 1 pizza</li>
+                        </ul>
+                    </div>
+                    <div class="singlePage__details2 ">
+                        <h3 class="font-bold pb-5">Ingredients</h3>
+                        <ul class="list-disc flex flex-col gap-5">
+                            <li>1 tablespoon tomato paste</li>
+                            <li>1 tablespoon water</li>
+                            <li>Salt, to taste</li>
+                            <li>2 tablespoons all-purpose flour</li>
+                            <li>1 (175 grams) ball store-bought or homemade pizza dough</li>
+                            <li>3 ounces burrata cheese, cut into 1-inch pieces</li>
+                            <li>4 thin slices prosciutto, torn in half lengthwise</li>
+                            <li>1/2 cup lightly packed arugula leaves</li>
+                            <li>Extra-virgin olive oil, for drizzling</li>
+                            <li>1/4 cup shaved in Parmesan cheese</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- FORMS -->
-    <section class="contactForms bg-secondary py-10 my-5">
+     </section>
+
+
+    <!-- CTA -->
+    <section class="cta bg-primary text-white py-10 lg:pb-0">
       <div class="container">
-        <div class="contactForms__wrapper">
-          <h1 class="text-center font-semibold mb-5">GET IN TOUCH</h1>
-          <div
-            class="contactForm__form flex flex-col items-center justify-center w-[27rem] mx-auto"
-          >
-            <form class="text-center flex flex-col">
-              <div class="contactForm__name flex gap-4 ">
-                <input type="text" placeholder="First Name" />
-                <input type="text" placeholder="Last Name" />
-              </div>
-              <input type="text" placeholder="Email Address" />
-              <input type="text" placeholder="Subject" />
-              <textarea name="msg" placeholder="Message"></textarea>
-            </form>
-            <a href="" class="btn bg-primaryy">SUBMIT FORM</a>
+        <div
+          class="cta__wrapper flex flex-col items-center justify-center text-center lg:flex-row"
+        >
+          <img class="hidden lg:block lg:w-96" src="../IMG/chef.png" alt="" />
+          <div class="cta__details">
+            <h3 class="font-bold">LET'S CONNECT</h3>
+            <p class="mb-5">and get a 20% off bill offers and invites</p>
+            <div class="cta__input bg-white p-3">
+              <input
+                class="px-3 py-2 focus:text-black focus:outline-none"
+                type="text"
+                placeholder="YOUR EMAIL ADDRESS"
+              />
+              <a href="" class="btn bg-scdryy">SUBSCRIBE</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- FOOTER -->
     <footer class="footer py-7">
       <div class="container">
@@ -132,7 +155,10 @@
     </footer>
 
     <!-- SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/toggle__menu.js"></script>
-    <script src="./js/tabs.js"></script>
+    <script src="./js/menu__tabs.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

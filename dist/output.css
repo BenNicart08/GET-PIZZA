@@ -930,6 +930,125 @@ p{
   margin-bottom: 1.25rem;
 }
 
+.menuList__cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px){
+  .menuList__cards{
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+}
+
+.menuList__cards--text ul{
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+  --tw-text-opacity: 1;
+  color: rgb(247 183 84 / var(--tw-text-opacity));
+}
+
+.menuList__cards--text h4{
+  font-weight: 600;
+}
+
+.menuList__cards img{
+  width: 8rem;
+}
+
+.menuList__tabs h4{
+  cursor: pointer;
+}
+
+.menuList__tabs h4:hover{
+  --tw-text-opacity: 1;
+  color: rgb(178 57 32 / var(--tw-text-opacity));
+}
+
+.menuList__details{
+  display: none;
+}
+
+@media (min-width: 1024px){
+  .menuList__details{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+  }
+}
+
+.menuList__details.active{
+  display: block;
+}
+
+.menuList__tabs h4.active{
+  --tw-text-opacity: 1;
+  color: rgb(178 57 32 / var(--tw-text-opacity));
+}
+
+.contactForm__form input{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 27rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+.contactForm__form input:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px){
+  .contactForm__form input{
+    width: 40rem;
+  }
+}
+
+.contactForms__wrapper form textarea{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  height: 15rem;
+  width: 27rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+.contactForms__wrapper form textarea:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px){
+  .contactForms__wrapper form textarea{
+    width: 40rem;
+  }
+}
+
+.contactForm__name input{
+  width: 13rem;
+}
+
+@media (min-width: 1024px){
+  .contactForm__name input{
+    width: 19.5rem;
+  }
+}
+
 .fixed{
   position: fixed;
 }
@@ -954,18 +1073,27 @@ p{
   z-index: 50;
 }
 
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
 }
 
 .mb-4{
@@ -1000,12 +1128,24 @@ p{
   height: 18rem;
 }
 
+.h-\[30rem\]{
+  height: 30rem;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
 .w-72{
   width: 18rem;
 }
 
 .w-96{
   width: 24rem;
+}
+
+.w-\[27rem\]{
+  width: 27rem;
 }
 
 .w-\[8rem\]{
@@ -1016,16 +1156,28 @@ p{
   width: 100%;
 }
 
-.max-w-\[40rem\]{
-  max-width: 40rem;
+.max-w-96{
+  max-width: 24rem;
+}
+
+.max-w-\[25rem\]{
+  max-width: 25rem;
 }
 
 .max-w-\[30rem\]{
   max-width: 30rem;
 }
 
+.list-disc{
+  list-style-type: disc;
+}
+
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1052,16 +1204,32 @@ p{
   gap: 0.75rem;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
 .gap-5{
   gap: 1.25rem;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
 }
 
 .rounded-3xl{
   border-radius: 1.5rem;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .border-8{
   border-width: 8px;
+}
+
+.border-r{
+  border-right-width: 1px;
 }
 
 .border-black{
@@ -1069,9 +1237,19 @@ p{
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-secondary{
+  --tw-border-opacity: 1;
+  border-color: rgb(247 183 84 / var(--tw-border-opacity));
+}
+
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(178 57 32 / var(--tw-bg-opacity));
+}
+
+.bg-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 183 84 / var(--tw-bg-opacity));
 }
 
 .bg-secondary\/30{
@@ -1088,8 +1266,29 @@ p{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-bgMenu{
+  background-image: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.6)), url('../IMG/menubanner.jpg');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-3{
   padding: 0.75rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-3{
@@ -1123,6 +1322,18 @@ p{
 
 .pb-10{
   padding-bottom: 2.5rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
 }
 
 .pt-28{
@@ -1166,6 +1377,11 @@ p{
   color: rgb(178 57 32 / var(--tw-text-opacity));
 }
 
+.text-tertiary{
+  --tw-text-opacity: 1;
+  color: rgb(34 60 95 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1197,20 +1413,64 @@ p{
     display: block;
   }
 
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:grid{
+    display: grid;
+  }
+
+  .lg\:h-\[30rem\]{
+    height: 30rem;
+  }
+
+  .lg\:h-\[40rem\]{
+    height: 40rem;
+  }
+
   .lg\:w-96{
     width: 24rem;
+  }
+
+  .lg\:w-\[50rem\]{
+    width: 50rem;
+  }
+
+  .lg\:w-\[70rem\]{
+    width: 70rem;
   }
 
   .lg\:w-full{
     width: 100%;
   }
 
+  .lg\:max-w-\[40rem\]{
+    max-width: 40rem;
+  }
+
+  .lg\:max-w-\[50rem\]{
+    max-width: 50rem;
+  }
+
   .lg\:max-w-\[60rem\]{
     max-width: 60rem;
   }
 
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:items-center{
+    align-items: center;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 
   .lg\:gap-10{
@@ -1225,7 +1485,29 @@ p{
     gap: 8rem;
   }
 
+  .lg\:rounded-3xl{
+    border-radius: 1.5rem;
+  }
+
+  .lg\:object-cover{
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:pb-0{
     padding-bottom: 0px;
+  }
+
+  .lg\:pr-10{
+    padding-right: 2.5rem;
+  }
+
+  .lg\:text-center{
+    text-align: center;
   }
 }
